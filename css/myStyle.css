@@ -1,0 +1,30 @@
+p{
+    font-size: 1.2em;
+    text-align: justify;
+    
+}
+ .height1 {
+      height: 700px;
+ }
+
+ .height2 {
+      height: 600px;
+ }
+.paralaxText{
+    position: absolute;
+    width: 100%;
+}
+
+.topMargin{
+    margin-top: 40%;
+}
+.center-text{
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+.floatRight{
+    display: block;
+    clear: both;
+    float: right;
+}

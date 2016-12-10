@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/icon.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.parallax').parallax();
+                $(".button-collapse").sideNav();
+                $('.collapsible').collapsible();      
+            });
+            
+            window.onload = function() {
+            var txt1 = $(".paralaxTxt:eq( 0 )");
+            var txt2 = $(".paralaxTxt:eq( 1 )");
+            var $window = $(window);
+                function calcH (n,s,l, obj , offset){
+                    if (n > s && n < l)
+                        {
+                            var h = 5 + ((offset) / (l - s)) * (n - s);
+                            //var h = (n-s)/(l/30) + 10;
+                            $( obj ).css( "margin-top", h+"%");
+                        }
+                }
+                $window.on('scroll', function() {
+                    var h = $window.scrollTop();
+                    calcH(h+1 , 0, 500, txt1 , 40);
+                    calcH(h+1 , 800, 1350 , txt2 , 33);
+                    //console.log(h);
+                });
+            };
+            
+        </script>  
+        
+    </head>
+   
+    <body>
+        
+        <ul id="slide-out" class="side-nav ">
+            <li><div class="userView">
+              <div class="background">
+                <img src="images/Elon_Musk_-_The_Summit_2013.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="images/Elon_Musk_-_The_Summit_2013.jpg"></a>
+              <a href="#!name"><span class="white-text name">John Doe</span></a>
+              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+          </ul>
+        
+          <div class="navbar-fixed">
+         <nav>
+            <div class="nav-wrapper blue">
+              <a href="#" class="brand-logo center">Hyperloop</a>
+              <ul id="nav-mobile" class="hide-on-med-and-down">
+                  <li><a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">view_headline</i></a></li>
+                <li class="active"><a href="sass.html">Home</a></li>
+                <li><a href="collapsible.html">UAE Participation</a></li>
+                <li><a href="badges.html">About</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        
+        
+            <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%; display: block;"><h2 class="header white-text center-text">How are we ?</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="images/us.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+                  We are a grouq of three students from the University of Sharjah majoring IT Multimedia.<br/><br/>
+                  We made this website as a project for the Web Programming course.<br/><br/>
+                  You can contact us using these links.<br/><br/>
+                </p>
+                
+                <div class="col s12">
+                    <div class="card horizontal">
+                      <div class="card-image">
+                        <img src="images/anas.JPG">
+                      </div>
+                      <div class="card-stacked">
+                        <div class="card-content">
+                          <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+            </div>
+          </div>
+        
+        
+        
+    </body>
+</html>
