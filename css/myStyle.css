@@ -1,8 +1,30 @@
+textarea {
+    width: 500px;
+    height: 190px;
+}
+
+.form_class{
+    position: absolute;
+    right: 25%;
+	top: 23%;
+    width:33em;
+	display: block;
+}
+
+h1{
+	text-align:center;
+}
+
+.contact_class{
+    margin-left: 200px;
+	width: 20em;
+}
+
 p{
     font-size: 1.2em;
     text-align: justify;
-    
 }
+
  .height1 {
       height: 700px;
  }
@@ -10,6 +32,7 @@ p{
  .height2 {
       height: 600px;
  }
+ 
 .paralaxText{
     position: absolute;
     width: 100%;
@@ -18,11 +41,13 @@ p{
 .topMargin{
     margin-top: 40%;
 }
+
 .center-text{
     text-align: justify;
     -moz-text-align-last: center;
     text-align-last: center;
 }
+
 .floatRight{
     display: block;
     clear: both;
