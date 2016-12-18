@@ -1,25 +1,31 @@
+.input-field X{
+	align: center;
+}
+
+h4{
+	text-align:center;
+}
+
 textarea {
-    width: 500px;
     height: 190px;
 }
 
-.form_class{
+/*.form_class{
     position: absolute;
-    right: 20%;
-	//top: 23%;
+    right: 25%;
+	top: 23%;
     width:33em;
-	display: inline-block;
-}
+	display: block;
+}*/
 
 h1{
 	text-align:center;
 }
 
-.contact_class{
+/*.contact_class{
     margin-left: 200px;
 	width: 20em;
-    display: inline-block;
-}
+}*/
 
 p{
     font-size: 1.2em;
