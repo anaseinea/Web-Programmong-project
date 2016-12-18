@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/icon.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.parallax').parallax();
+                $(".button-collapse").sideNav();
+                $('.collapsible').collapsible();      
+            });
+            
+            window.onload = function() {
+            var txt1 = $(".paralaxTxt:eq( 0 )");
+            var $window = $(window);
+                function calcH (n,s,l, obj , offset){
+                    if (n > s && n < l)
+                        {
+                            var h = 5 + ((offset) / (l - s)) * (n - s);
+                            //var h = (n-s)/(l/30) + 10;
+                            $( obj ).css( "margin-top", h+"%");
+                        }
+                }
+                $window.on('scroll', function() {
+                    var h = $window.scrollTop();
+                    calcH(h+1 , 0, 500, txt1 , 40);
+                    //console.log(h);
+                });
+            };
+            
+        </script>  
+        
+    </head>
+   
+    <body>
+        
+         <ul id="slide-out" class="side-nav ">
+            <li><div>
+              <div class="background">
+                <img src="images/us_small.jpg">
+              </div>
+            </div></li>
+            <li><a class="waves-effect" href="index.html">Main</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="Survey.html">Survey</a></li>
+            <li><a class="waves-effect" href="resources.html">Resources</a></li>
+            <li><a class="waves-effect" href="about.html">About us</a></li>
+          </ul>
+        
+          <div class="navbar-fixed">
+         <nav>
+            <div class="nav-wrapper blue">
+              <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">view_headline</i></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="UAE.html">UAE Participation</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contest.html">Contest</a></li>
+              </ul>
+                <a href="#" class="brand-logo center">Hyperloop Coverage</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"><a href="Coverage.html">Coverage</a></li>
+                    <li><a href="Facts.html">Facts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    </ul>
+            </div>
+          </nav>
+        </div>
+        
+        
+            <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%; display: block;"><h2 class="header blue-text center-text">Hyperloop Coverage</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="http://syntaxdesign.com/blog/wp-content/uploads/amman-map.gif"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+            <center><a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Show Me!</a></center>
+			  <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
+			 <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Dubai</div>
+      <div class="collapsible-body"><p>Dubai is the main and central hub of Hyperloop.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Abu Dhabi</div>
+      <div class="collapsible-body"><p>ETA: 10~15 minutes.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Riyadh</div>
+      <div class="collapsible-body"><p>ETA: 40~45 minutes.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Doha</div>
+      <div class="collapsible-body"><p>ETA: 20~25 minutes.</p></div>
+    </li> 
+	<li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Muscat</div>
+      <div class="collapsible-body"><p>ETA: 25~30 minutes.</p></div>
+    </li>
+	<li>
+      <div class="collapsible-header"><i class="material-icons"></i>More Coming Soon!</div>
+    </li>
+  </ul>
+			  
+			  
+			  
+			  
+			  
+            </div>
+          </div>
+          
+    </body>
+</html>

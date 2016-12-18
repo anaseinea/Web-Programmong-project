@@ -14,6 +14,7 @@
             
             window.onload = function() {
             var txt1 = $(".paralaxTxt:eq( 0 )");
+            var txt2 = $(".paralaxTxt:eq( 1 )");
             var $window = $(window);
                 function calcH (n,s,l, obj , offset){
                     if (n > s && n < l)
@@ -26,6 +27,7 @@
                 $window.on('scroll', function() {
                     var h = $window.scrollTop();
                     calcH(h+1 , 0, 400, txt1 , 35);
+                    calcH(h+1 , 1300, 1950 , txt2 , 33);
                     //console.log(h);
                 });
             };
@@ -52,7 +54,7 @@
           <div class="navbar-fixed">
          <nav>
             <div class="nav-wrapper blue">
-              <a href="#" class="brand-logo center">Basel Shublaq</a>
+              <a href="#" class="brand-logo center">Faisal AlYahya</a>
               <ul id="nav-mobile" class="hide-on-med-and-down">
                   <li><a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">view_headline</i></a></li>
               </ul>
@@ -63,35 +65,46 @@
         
             <div class="paralaxText container">
                 <div class="row">
-                    <div class="paralaxTxt" style="margin-top: 5%; display: block;"><h2 class="header white-text center-text">What I do</h2></div>
+                    <div class="paralaxTxt" style="margin-top: 5%; display: block;"><h2 class="header white-text center-text">What do I do ?</h2></div>
                 </div>
             </div>
           <div class="parallax-container" style="height: 90%;">
-            <div class="parallax"><img src="images/Mars.png"></div>
+            <div class="parallax"><img src="images/FAYlg.jpg"></div>
           </div>
           <div class="section white">
             <div class="row container">
               
-				<p class="grey-text text-darken-3 lighten-3">
-                 I enjoy designing for professional and non-professional use, ranging from logos, to banners, to backgrounds, and posters. I have a portfolio containing all my designs (including the bad ones!). I have successfully designed a logo for a small fashion retail startup. I am also present on 99designs, and have participated in several contests.
-				 <br><br>Here are some samples of my work:-<br>
-				</p>
-				<p><b>Banners:</b></p>
-				<img src="images/Banner1.png" alt="Banner 1">
-				<img src="images/Banner2.png" alt="Banner 2">
-				<img src="images/Banner3.png" alt="Banner 3">
-				<img src="images/Banner4.png" alt="Banner 4">
-				<p><b>Logos:</b></p>
-				<img src="images/Logo1.png" alt="Logo 1">
-				<img src="images/Logo2.png" alt="Logo 2">
-				<img src="images/Logo3.png" alt="Logo 3">
-				<img src="images/Logo4.png" alt="Logo 4">
-				<p><b>Backgrounds:</b></p>
-				<img src="images/Background1.png" alt="Background 1">
-				<img src="images/Background2.png" alt="Background 2">
-
+              <p class="grey-text text-darken-3 lighten-3">
+                  I like to game develop, script, 3D model create, and creating/developing interactive dialogues and interfaces<br> 
+				  <ol>
+	<li> Owner of an arabian gaming community with 2K+ members.</li><br>
+	<li> Created almost 30+ Vehicles imported to some games.</li><br>
+	<li> Good knowledge of visual basic</li><br>
+	</ol><br>
+	
+	<img src="images/car3d.gif" alt="carss" height="360" width="480"><img src="images/cityTB.jpg" alt="cityTB" height="360" width="480"><br>
+                </p>
             </div>
           </div>
+        
+        <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%;"><h2 class="header white-text center-text">Whats my motto ?</h2></div>
+                </div>
+            </div>
+        <div class="parallax-container height2">
+            <div class="parallax"><img src="images/FAYlg.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+                  Bananas!.<br/><br/>
+                  Seriously, I like the name of it but hate to eat it ^^.</p>
+				  <img src="images/Banana.jpg" alt="Banana" height="627" width="627">
+            </div>
+          </div>
+        
         
           <footer class="page-footer blue">
           <div class="container">
@@ -101,16 +114,17 @@
                 <p class="grey-text text-lighten-4">Course project on Hyperloop</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Resources</h5>
+                <h5 class="white-text">Resorces</h5>
                 <ul>
-				  <li><a class="grey-text text-lighten-3" href="http://materializecss.com">Materialize</a></li>
-				  <li><a class="grey-text text-lighten-3" href="http://www.gulfnews.com">Gulf News</a></li>
                   <li><a class="grey-text text-lighten-3" href="https://en.wikipedia.org">Wikipedia</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://materializecss.com">Materialize</a></li>
                   <li><a class="grey-text text-lighten-3" href="https://www.youtube.com">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.gulfnews.com">Gulf News</a></li>
                 </ul>
               </div>
             </div>
           </div>
+          
         </footer>
     </body>
 </html>

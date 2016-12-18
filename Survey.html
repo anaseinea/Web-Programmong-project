@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/icon.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.parallax').parallax();
+                $(".button-collapse").sideNav();
+                $('.collapsible').collapsible();      
+            });
+            
+            window.onload = function() {
+            var txt1 = $(".paralaxTxt:eq( 0 )");
+            var txt2 = $(".paralaxTxt:eq( 1 )");
+            var $window = $(window);
+                function calcH (n,s,l, obj , offset){
+                    if (n > s && n < l)
+                        {
+                            var h = 5 + ((offset) / (l - s)) * (n - s);
+                            //var h = (n-s)/(l/30) + 10;
+                            $( obj ).css( "margin-top", h+"%");
+                        }
+                }
+                $window.on('scroll', function() {
+                    var h = $window.scrollTop();
+                    calcH(h+1 , 0, 500, txt1 , 40);
+                    calcH(h+1 , 1100, 1700 , txt2 , 33);
+                    //console.log(h);
+                });
+            };
+            
+        </script>  
+        
+    </head>
+   
+   
+    <body>
+        
+        <ul id="slide-out" class="side-nav ">
+            <li><div>
+              <div class="background">
+                <img src="images/us_small.jpg">
+              </div>
+            </div></li>
+            <li><a class="waves-effect" href="index.html">Main</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="Survey.html">Survey</a></li>
+            <li><a class="waves-effect" href="resources.html">Resources</a></li>
+            <li><a class="waves-effect" href="about.html">About us</a></li>
+          </ul>
+        
+          <div class="navbar-fixed">
+         <nav>
+            <div class="nav-wrapper blue">
+              <a href="#" class="brand-logo center">Survey</a>
+              <ul id="nav-mobile" class="hide-on-med-and-down">
+                  <li><a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">view_headline</i></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        
+        
+            <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%; display: block;"><h2 class="header white-text center-text">Hyperloop Survey</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="http://thelifepile.com/wp-content/uploads/2016/11/Hyperloop-One-Inc.-will-build-a-hyperloop-in-Dubai.jpeg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+            
+				<h1 id="Resst"><a>Survey Form</a></h1>
+		<form id="01FAY" class="01FAY"  method="post" action="">
+					<div class="Fay_description">
+		</div>						
+			<ul >
+			
+					<li id="Faisal_li_1" >
+		<label class="description" for="Faisal_element_1"><h6>Name</h6></label>
+		<span>
+			<input id="Faisal_element_1_1" name= "Faisal_element_1_1" class="text" maxlength="255" size="8" value=""/>
+			<label>First</label>
+		</span>
+		<span>
+			<input id="Faisal_element_1_2" name= "Faisal_element_1_2" class="text" maxlength="255" size="14" value=""/>
+			<label>Last</label>
+		</span> <br><br>
+		</li>		<li id="Faisal_li_3" >
+		<label class="description" for="Faisal_element_3"><h6>Your Email</h6> </label>
+		<div>
+			<input id="Faisal_element_3" name="Faisal_element_3" class="text" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li><br><br>		<li id="Faisal_li_6" >
+		<label class="description" for="Faisal_element_6"><h6>In which country would you like the next opening of hyper loop to be connected to?</h6> </label>
+		<span>
+			<input id="Faisal_element_6_1" name="Faisal_element_6" class="radio" type="radio" value="1" />
+			<label class="choice" for="Faisal_element_6_1">Saudi Arabia</label>
+			<input id="Faisal_element_6_2" name="Faisal_element_6" class="radio" type="radio" value="2" />
+			<label class="choice" for="Faisal_element_6_2">Oman</label>
+			<input id="Faisal_element_6_3" name="Faisal_element_6" class="radio" type="radio" value="3" />
+			<label class="choice" for="Faisal_element_6_3">Qatar</label>
+			<input id="Faisal_element_6_4" name="Faisal_element_6" class="radio" type="radio" value="4" />
+			<label class="choice" for="Faisal_element_6_4">Bahrain</label>
+
+		</span> 
+		</li><br><br>		<li id="Faisal_li_8" >
+		<label class="description" for="Faisal_element_8"><h6>Please tick the commuties you will be using hyperloop for</h6> </label>
+		<span>
+			<input id="Faisal_element_8_1" name="Faisal_element_8_1" class="checkbox" type="checkbox" value="1" />
+			<label class="choice" for="Faisal_element_8_1">Job/work</label>
+			<input id="Faisal_element_8_2" name="Faisal_element_8_2" class="checkbox" type="checkbox" value="1" />
+			<label class="choice" for="Faisal_element_8_2">Leisure places</label>
+			<input id="Faisal_element_8_3" name="Faisal_element_8_3" class="checkbox" type="checkbox" value="1" />
+			<label class="choice" for="Faisal_element_8_3">Pick up/Drop off locations</label>
+			<input id="Faisal_element_8_4" name="Faisal_element_8_4" class="checkbox" type="checkbox" value="1" />
+			<label class="choice" for="Faisal_element_8_4">Other</label>
+
+		</span> 
+		</li><br><br>		<li id="Faisal_li_5" >
+		<label class="description" for="Faisal_element_5"><h6>If other was selected please specify: </h6></label>
+		<div>
+			<textarea id="Faisal_element_5" name="Faisal_element_5" class="textarea"></textarea> 
+		</div> 
+		</li><br><br>		<li id="Faisal_li_2" >
+		<label class="description" for="Faisal_element_2"><h6>How much are you willing to spend for a ticket?</h6> </label>
+		<span>
+			<input id="Faisal_element_2_1" name="Faisal_element_2_1" class="moeneeey" size="10" value="" type="text" /> .		
+			<label for="Faisal_element_2_1">AED</label>
+		</span>
+		 
+		</li><br><br>
+		<!--
+		<li id="Faisal_li_7" >
+		<label class="description" for="Faisal_element_7"><h6>Which class will you prefer to use? </h6></label>
+		<div>
+		<select class="select" id="Faisal_element_7" name="Faisal_element_7"> 
+		<option value="1" selected="selected"></option>
+		<option value="1" >First</option>
+		<option value="2" >Women's only</option>
+		<option value="3" >Economic</option>
+
+		</select>
+		</div> 
+		</li><br><br>
+        -->
+		<li id="Faisal_li_4" >
+		<label class="description" for="Faisal_element_4"><h6>Any extra idea?</h6> </label>
+		<div>
+			<textarea id="Faisal_element_4" name="Faisal_element_4" class="textarea"></textarea> 
+		</div> <br><br>
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="Fay_id" value="454" />
+			    <br><br>
+				 <a href="#!" class="btn waves-effect waves-teal">Send</a>
+				 <a href="Survey.html" class="btn waves-effect waves-teal">Reset</a>
+		</li>
+			</ul>
+		</form>	
+				
+            </div>
+          </div>
+        
+    </body>
+</html>

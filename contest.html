@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/icon.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.parallax').parallax();
+                $(".button-collapse").sideNav();
+                $('.collapsible').collapsible();      
+            });
+            
+            window.onload = function() {
+            var txt1 = $(".paralaxTxt:eq( 0 )");
+            var txt2 = $(".paralaxTxt:eq( 1 )");
+            var $window = $(window);
+                function calcH (n,s,l, obj , offset){
+                    if (n > s && n < l)
+                        {
+                            var h = 5 + ((offset) / (l - s)) * (n - s);
+                            //var h = (n-s)/(l/30) + 10;
+                            $( obj ).css( "margin-top", h+"%");
+                        }
+                }
+                $window.on('scroll', function() {
+                    var h = $window.scrollTop();
+                    calcH(h+1 , 0, 500, txt1 , 40);
+                    calcH(h+1 , 1500, 1900 , txt2 , 40);
+                    //console.log(h);
+                });
+            };
+            
+        </script>  
+        
+    </head>
+   
+    <body>
+        
+         <ul id="slide-out" class="side-nav ">
+            <li><div>
+              <div class="background">
+                <img src="images/us_small.jpg">
+              </div>
+            </div></li>
+            <li><a class="waves-effect" href="index.html">Main</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="Survey.html">Survey</a></li>
+            <li><a class="waves-effect" href="resources.html">Resources</a></li>
+            <li><a class="waves-effect" href="about.html">About us</a></li>
+          </ul>
+        
+          <div class="navbar-fixed">
+         <nav>
+            <div class="nav-wrapper blue">
+              <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">view_headline</i></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="UAE.html">UAE Participation</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li class="active"><a href="contest.html">Contest</a></li>
+              </ul>
+                <a href="#" class="brand-logo center">Contest</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="Coverage.html">Coverage</a></li>
+                    <li><a href="Facts.html">Facts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    </ul>
+            </div>
+          </nav>
+        </div>        
+        
+            <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%; display: block;"><h2 class="header grey-text center-text">Phase 1: Design weekend (January 2016)</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="http://www.christophgrizzard.eu/wp-content/uploads/2016/01/bigstock_competitive_battle_5620462.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+   Five design awards were assigned following the January design weekend.<br/><br/>
+
+MIT Hyperloop Team's design was awarded received the "Best Overall Design Award", among the 23 designs selected to move to the prototype stage. The design proposes a 250 kg (551 lb) pod with a carbon fiber and polycarbonate sheet exterior. It is elevated by a passive magnetic levitation system comprising 20 neodymium magnets that will maintain a 15 mm (0.6 in) distance above the track. The team says with air pressure at 140 Pascals, the pod could accelerate at 2.4 G and have 2 Newton aerodynamic drag when traveling at 110 m/s. The design includes a fail-safe braking system that automatically halts the pod should the actuators or computers fail, and low speed emergency drive wheels that can move the pod 1 m/s.<br/><br/>
+
+Delft Hyperloop received a "Pod Innovation Award", while Badgerloop, Hyperloop at Virginia Tech, and HyperXite at UC Irvine each received a "Pod Technical Excellence Award".<br/><br/>
+
+In addition to the five pod awards above, nine subsystem awards and three "design only" awards were given to teams, most to teams that were not chosen to continue on to the on-track competition. Technical awards for outstanding technical merit in subsystem and design, based on "innovation and uniqueness of subsystem design, full Hyperloop system applicability and economics; level of design detail; strength of supporting analysis and tests; and quality of documentation and presentation."<br/><br/>
+
+Best Overall Subsystem Award: Auburn University Hyperloop Team, Auburn University; Special Innovation Award in the Other Subsystem: RIT Imaging, Rochester Institute of Technology; :Levitation Subsystem Technical Excellence Award: TAMU Aerospace Hyperloop, Texas A&M; Braking Subsystem Technical Excellence Award: VicHyper, RMIT University; Propulsion/Compression Subsystem Technical Excellence Award: Makers UPV Team, Universitat Politècnica de València; Safety Subsystem Technical Excellence Award: UWashington Hyperloop, University of Washington ; Subsystem Technical Excellence Awards: Hyped, University of Edinburgh; Conant Hyperloop Club, Conant High School; Subsystem Innovation Award: Ryerson’s International Hyperloop Team, Ryerson University. Top Design Concept Award: Makers UPV Team ; Design Concept Innovation Award: Nova Hyperloop Team, University of Cairo; Design Concept Innovation Award: Auburn University Hyperloop Team.<br/><br/><br/>
+                </p>
+            </div>
+          </div>
+        
+        <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%;"><h2 class="header grey-text center-text">Phase 2: Test track runs (January 2017)</h2></div>
+                </div>
+            </div>
+        <div class="parallax-container height2">
+            <div class="parallax"><img src="https://moggridgeplumbing.files.wordpress.com/2011/12/business-competition.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+                  Competitive runs in the Hypertube test track will be awarded based on various classes (fully functional pod, susbsystem test pod, etc.) and pod mass. Detailed criteria will be released later in 2016.<br/><br/>
+
+Phase 2 is currently scheduled for January 27-29 2017, after previously being planned for as early as August 2016.<br/><br/><br/>
+               </p>
+            </div>
+          </div>
+        
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/icon.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.parallax').parallax();
+                $(".button-collapse").sideNav();
+                $('.collapsible').collapsible();      
+            });
+            
+            window.onload = function() {
+            var txt1 = $(".paralaxTxt:eq( 0 )");
+            var txt2 = $(".paralaxTxt:eq( 1 )");
+            var txt3 = $(".paralaxTxt:eq( 2 )");
+            var txt4 = $(".paralaxTxt:eq( 3 )");
+            var txt5 = $(".paralaxTxt:eq( 4 )");
+            var txt6 = $(".paralaxTxt:eq( 5 )");
+            var $window = $(window);
+                function calcH (n,s,l, obj , offset){
+                    if (n > s && n < l)
+                        {
+                            var h = 5 + ((offset) / (l - s)) * (n - s);
+                            //var h = (n-s)/(l/30) + 10;
+                            $( obj ).css( "margin-top", h+"%");
+                        }
+                }
+                $window.on('scroll', function() {
+                    var h = $window.scrollTop();
+                    calcH(h+1 , 0, 500, txt1 , 40);
+                    calcH(h+1 , 900, 1400 , txt2 , 40);
+                    calcH(h+1 , 1500, 2300 , txt3 , 33);
+                    calcH(h+1 , 2500, 3200 , txt4 , 33);
+                    calcH(h+1 , 3400, 4200 , txt5 , 33);
+                    calcH(h+1 , 4300, 5000 , txt6 , 40);
+                    console.log(h);
+                });
+            };
+            
+        </script>  
+        
+    </head>
+   
+    <body>
+        
+         <ul id="slide-out" class="side-nav ">
+            <li><div>
+              <div class="background">
+                <img src="images/us_small.jpg">
+              </div>
+            </div></li>
+            <li><a class="waves-effect" href="index.html">Main</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="Survey.html">Survey</a></li>
+            <li><a class="waves-effect" href="resources.html">Resources</a></li>
+            <li><a class="waves-effect" href="about.html">About us</a></li>
+          </ul>
+        
+          <div class="navbar-fixed">
+         <nav>
+            <div class="nav-wrapper blue">
+              <ul id="nav-mobile" class="hide-on-med-and-down">
+                    <li><a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">view_headline</i></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="UAE.html">UAE Participation</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contest.html">Contest</a></li>
+              </ul>
+                <a href="#" class="brand-logo center">Facts</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="Coverage.html">Coverage</a></li>
+                    <li class="active"><a href="Facts.html">Facts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    </ul>
+            </div>
+          </nav>
+        </div>
+        
+        
+            <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%;margin-left: 15%; display: block;"><h2 class="header white-text center-text">1. History of Hyperloop</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="http://guardianlv.com/wp-content/uploads/2015/03/Hyperloop-Coming-to-a-Location-Near-You1.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+				
+The general idea of trains or other transportation traveling through evacuated tubes dates back more than a century. Elon Musk’s twenty-first-century take on the idea—Hyperloop—adds a few elements that, possibly, may make the idea economically viable. The specific technology to make such a system a reality has been in various stages of prototype since the early 1960’s. These were government agency efforts, scientific efforts –yet no one person had the engineering and business skills to make such a system seem feasible to the general public.<br/><br/>
+                </p>
+            </div>
+          </div>
+		  
+		  <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%;margin-left: 15%; display: block;"><h2 class="header white-text center-text">2. Elon Musk is not alone in this race</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="http://guardianlv.com/wp-content/uploads/2015/03/Hyperloop-Coming-to-a-Location-Near-You1.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+				
+Hyperloop One is not alone in pursuing this dream. At least two other startups and students from dozens of universities are figuring out how to fling people vast distances at great speed. A healthy competition is a must for even a revolutionary concept, I guess.<br/><br/>
+                </p>
+            </div>
+          </div>
+		  
+		  <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%;margin-left: 15%; display: block;"><h2 class="header white-text center-text">3. How the Musk Hyperloop actually works is still a mystery.</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="http://guardianlv.com/wp-content/uploads/2015/03/Hyperloop-Coming-to-a-Location-Near-You1.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+				
+Hyperloop consists of a low pressure tube with capsules that are transported at both low and high speeds throughout the length of the tube. The capsules are supported on a cushion of air, featuring pressurized air and aerodynamic lift. The capsules are accelerated via a magnetic linear accelerator affixed at various stations on the low pressure tube with rotors contained in each capsule. Passengers may enter and exit Hyperloop at stations located either at the ends of the tube, or branches along the tube length.What the air contains is unknown because normal air would cause too much friction. A talk of partial vacuum is also there. The pod is going to be 2 meters wide.<br/><br/>
+                </p>
+            </div>
+          </div>
+		  
+		  <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%; margin-left: 15%; display: block;"><h2 class="header white-text center-text">4. SpaceX and Tesla Motors Comes First: This Is Going To Wait</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="http://guardianlv.com/wp-content/uploads/2015/03/Hyperloop-Coming-to-a-Location-Near-You1.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+
+The exec has made it pretty clear he wants someone else to focus on building it. Concerned he may have announced his ideas way too early, Musk indicated he had a full plate with running his other two companies. SpaceX is busy with developing renewable rockets while Tesla is setting a national network of mobile chargers. The train is a revolutionary concept that would take considerably more effort to make.<br/><br/>
+                </p>
+            </div>
+          </div>
+		  
+		  <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%;margin-left: 15%; display: block;"><h2 class="header white-text center-text">5. Hyperloop will be completely self sustaining.</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="http://guardianlv.com/wp-content/uploads/2015/03/Hyperloop-Coming-to-a-Location-Near-You1.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+				
+The idea is simple – the Steel tubes will be lined with solar panels which will store the energy that powers the air compressors that cushion the pods, as well as other vital components. The intention is that the Hyperloop should function normally even under cloudy conditions.<br/><br/>
+
+                </p>
+            </div>
+          </div>
+		  
+		  <div class="paralaxText container">
+                <div class="row">
+                    <div class="paralaxTxt" style="margin-top: 5%;margin-left: 15%; display: block;"><h2 class="header white-text center-text">6. Safety of the system</h2></div>
+                </div>
+            </div>
+          <div class="parallax-container height1">
+            <div class="parallax"><img src="http://guardianlv.com/wp-content/uploads/2015/03/Hyperloop-Coming-to-a-Location-Near-You1.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              
+              <p class="grey-text text-darken-3 lighten-3">
+				
+Human beings can withstand only about 0.2 Gs of acceleration up and down or side to side. Now, that value will increase if the Hyperloop is cranking away at 800mph. Thus, it is imperative that the Hyperloop run along a straight line without any turns or sudden change in direction. To do this, a lot of tunnels will have to be constructed, which will cost significant amount of money. Also, another factor to consider is the overall safety of the system. Now, Musk himself has called the Hyperloop the safest fifth mode of transport, but anyone could point out that should there be even a slight disturbance in the path of the pod, and its Game over for everyone on board.<br/><br/>
+                </p>
+            </div>
+          </div>
+		  
+		  
+        
+    </body>
+</html>
