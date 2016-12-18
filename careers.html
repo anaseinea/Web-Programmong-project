@@ -7,32 +7,8 @@
         <script src="js/materialize.js"></script>
         <script>
             $(document).ready(function(){
-              $('.parallax').parallax();
                 $(".button-collapse").sideNav();
-                $('.collapsible').collapsible();      
-            });
-            
-            window.onload = function() {
-            var txt1 = $(".paralaxTxt:eq( 0 )");
-            var txt2 = $(".paralaxTxt:eq( 1 )");
-            var $window = $(window);
-                function calcH (n,s,l, obj , offset){
-                    if (n > s && n < l)
-                        {
-                            var h = 5 + ((offset) / (l - s)) * (n - s);
-                            //var h = (n-s)/(l/30) + 10;
-                            $( obj ).css( "margin-top", h+"%");
-                        }
-                }
-                $window.on('scroll', function() {
-                    var h = $window.scrollTop();
-                    calcH(h+1 , 0, 500, txt1 , 40);
-                    calcH(h+1 , 800, 1350 , txt2 , 33);
-                    //console.log(h);
-                });
-            };
-			
-						$(document).ready(function() {
+                $('.collapsible').collapsible();
 				$('select').material_select();
 			});
             
@@ -78,7 +54,8 @@
 					<h1>WANT TO WORK WITH US?</h1><br/>
 			<div><h4>Current Openings</h4></div>
 			<div class="row">
-				<div class="input-field X">
+                
+				<div class="input-field col m6 offset-m3">
 					<select>
 						<option value="1">Management</option>
 						<option value="" disabled selected>Advertising</option>
@@ -87,7 +64,7 @@
 					</select>
 					<label>Business</label>
 				</div>
-				<div class="input-field Y">
+				<div class="input-field col m6 offset-m3">
 					<select>
 						<option value="1">Architectural</option>
 						<option value="2">Aeronautical</option>
