@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/icon.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.parallax').parallax();
+                $(".button-collapse").sideNav();
+                $('.collapsible').collapsible();      
+            });
+            
+            window.onload = function() {
+            var txt1 = $(".paralaxTxt:eq( 0 )");
+            var txt2 = $(".paralaxTxt:eq( 1 )");
+            var $window = $(window);
+                function calcH (n,s,l, obj , offset){
+                    if (n > s && n < l)
+                        {
+                            var h = 5 + ((offset) / (l - s)) * (n - s);
+                            //var h = (n-s)/(l/30) + 10;
+                            $( obj ).css( "margin-top", h+"%");
+                        }
+                }
+                $window.on('scroll', function() {
+                    var h = $window.scrollTop();
+                    calcH(h+1 , 0, 500, txt1 , 40);
+                    calcH(h+1 , 1100, 1700 , txt2 , 33);
+                    //console.log(h);
+                });
+            };
+            
+        </script>  
+        
+    </head>
+	
+    <body>
+	    <ul id="slide-out" class="side-nav ">
+			<li><div>
+				<div class="background">
+                <img src="images/us_small.jpg">
+				</div>
+            </div></li>
+            <li><a class="waves-effect" href="index.html">Main</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="Survey.html">Survey</a></li>
+            <li><a class="waves-effect" href="resources.html">Resources</a></li>
+            <li><a class="waves-effect" href="about.html">About us</a></li>
+         </ul>
+        
+        <div class="navbar-fixed">
+        <nav>
+			<div class="nav-wrapper blue">
+				<a href="#" class="brand-logo center">Resources</a>
+				<ul id="nav-mobile" class="hide-on-med-and-down">
+					<li><a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">view_headline</i></a></li>
+				</ul>
+            </div>
+		</nav>
+        </div>
+        
+		<div class="parallax-container height1">
+			<div class="parallax"><img src="https://scotch.io/wp-content/uploads/2015/01/getting-started-materialize-css-framework.png"></div>
+		</div>
+		
+		<div class="section white">
+			<div class="row container">
+				<p class="grey-text text-darken-3 lighten-3"></p>
+			</div>
+		</div>
+			
+		<div class="parallax-container height1">
+			<div class="parallax"><img src="http://faisaljabbas.com/wp-content/uploads/2016/08/GN-new-2.jpg"></div>
+		</div>
+			
+		<div class="section white">
+			<div class="row container">
+				<p class="grey-text text-darken-3 lighten-3"></p>
+			</div>
+		</div>
+			
+		<div class="parallax-container height1">
+			<div class="parallax"><img src="http://www.glaad.org/sites/default/files/images/2014-08/wikipedia.jpg"></div>
+		</div>
+         
+		<div class="section white">
+			<div class="row container">
+				<p class="grey-text text-darken-3 lighten-3"></p>
+			</div>
+		</div>
+			
+		<div class="parallax-container height1">
+			<div class="parallax"><img src="http://wallsdesk.com/wp-content/uploads/2016/06/YouTube-Background.png"></div>
+		</div>
+		 
+		<div class="section white">
+			<div class="row container">
+				<p class="grey-text text-darken-3 lighten-3"></p>
+			</div>
+		</div>
+			
+		<div class="parallax-container height1">
+			<div class="parallax"><img src="https://image.winudf.com/36/21ac1618a33972/screen-3.jpg"></div>
+		</div>
+			
+		<div class="section white">
+			<div class="row container">
+				<p class="grey-text text-darken-3 lighten-3"></p>
+			</div>
+		</div>
+			
+		<div class="parallax-container height1">
+			<div class="parallax"><img src="http://www.pixelstalk.net/wp-content/uploads/2016/06/Facebook-Wallpaper.jpg"></div>
+		</div>
+			
+		<div class="section white">
+			<div class="row container">
+				<p class="grey-text text-darken-3 lighten-3"></p>
+			</div>
+		</div>
+			
+		<div class="parallax-container height1">
+			<div class="parallax"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/designweek/prod/content/uploads/2016/05/18093741/Hyperloop_One_Logo_2016_TAG_Dedit.jpg"></div>
+		</div>
+		 
+        <footer class="page-footer blue">
+          <div class="container">
+            <div class="row" style="margin-bottom: 0px;">
+              <div class="col l6 s12">
+                <h5 class="white-text">Web Programming</h5>
+                <p class="grey-text text-lighten-4">Course project on Hyperloop</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Resources</h5>
+                <ul>
+				  <li><a class="grey-text text-lighten-3" href="http://materializecss.com">Materialize</a></li>
+				  <li><a class="grey-text text-lighten-3" href="http://www.gulfnews.com">Gulf News</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://en.wikipedia.org">Wikipedia</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.youtube.com">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </body>
+</html>
